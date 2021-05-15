@@ -15,5 +15,5 @@
 
 ```
 
-apt update && apt upgrade -y && apt install bash git -y && git clone https://github.com/fikrado-orgnasation/termux-all-tools && cd Yahye_Abdirahman && bash termux.sh
+apt update && apt upgrade -y && apt install bash git -y && git clone https://github.com/fikrado-orgnasation/termux-all-tools && cd termux-all-tools && bash termux.sh
 ```

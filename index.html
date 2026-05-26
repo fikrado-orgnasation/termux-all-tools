@@ -3,42 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkyTrade Aviation - Global Aircraft Trading</title>
+    <title>Stratosphere Aeronautics - Training the sky professionals of tomorrow</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Loading Screen -->
     <div id="loading-screen">
         <div class="loader">
             <div class="plane-loader"></div>
-            <h2>Initializing SkyTrade Systems...</h2>
+            <h2>Initializing Stratosphere Aeronautics...</h2>
             <div class="progress-bar">
                 <div class="progress-fill"></div>
             </div>
         </div>
     </div>
-
-    <!-- 3D Canvas Container -->
     <canvas id="webgl-canvas"></canvas>
-
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-brand">
             <div class="logo">
-                <span class="logo-icon">✈</span>
-                <span class="logo-text">SKYTRADE</span>
+                <img src="https://raw.githubusercontent.com/fikrado-orgnasation/termux-all-tools/main/logo.png" alt="Stratosphere Aeronautics Logo" class="logo-image">
+                <span class="logo-text">STRATOSPHERE AERONAUTICS</span>
             </div>
         </div>
         <ul class="nav-menu">
             <li><a href="#home" class="nav-link active">Home</a></li>
-            <li><a href="#fleet" class="nav-link">Fleet</a></li>
-            <li><a href="#services" class="nav-link">Services</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
+            <li><a href="#affiliations" class="nav-link">Affiliations</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
         <div class="nav-cta">
-            <button class="btn-primary">Get Quote</button>
+            <button class="btn-primary">Enroll Now</button>
         </div>
         <div class="mobile-menu-btn">
             <span></span>
@@ -46,306 +41,75 @@
             <span></span>
         </div>
     </nav>
-
-    <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="hero-content">
             <h1 class="hero-title">
-                <span class="title-line">Global Aircraft</span>
-                <span class="title-line accent">Trading Solutions</span>
+                <span class="title-line">Stratosphere Aeronautics</span>
+                <span class="title-line accent">Training the sky professionals of tomorrow</span>
             </h1>
-            <p class="hero-subtitle">Connecting buyers and sellers worldwide with premium aircraft assets and comprehensive aviation services</p>
+            <p class="hero-subtitle">ICAO-recognized regional air navigation & management training.</p>
             <div class="hero-stats">
                 <div class="stat-item">
-                    <span class="stat-number" data-target="500">0</span>
-                    <span class="stat-label">Aircraft Traded</span>
+                    <span class="stat-number" data-target="200">0</span>
+                    <span class="stat-label">Employees</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number" data-target="50">0</span>
-                    <span class="stat-label">Countries Served</span>
+                    <span class="stat-number" data-target="10">0</span>
+                    <span class="stat-label">Training Programs</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number" data-target="25">0</span>
-                    <span class="stat-label">Years Experience</span>
+                    <span class="stat-number" data-target="2026">0</span>
+                    <span class="stat-label">Founded</span>
                 </div>
             </div>
             <div class="hero-buttons">
-                <button class="btn-primary btn-large">Explore Fleet</button>
+                <button class="btn-primary btn-large">Explore Programs</button>
                 <button class="btn-secondary btn-large">Contact Us</button>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <span>Scroll to Explore</span>
-        </div>
     </section>
-
-    <!-- Fleet Section -->
-    <section id="fleet" class="fleet-section">
-        <div class="section-container">
-            <div class="section-header">
-                <h2 class="section-title">Our Fleet</h2>
-                <p class="section-subtitle">Premium aircraft available for immediate acquisition</p>
-            </div>
-            <div class="fleet-grid">
-                <div class="fleet-card" data-aircraft="boeing737">
-                    <div class="card-image">
-                        <div class="aircraft-visual"></div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Boeing 737-800</h3>
-                        <p class="aircraft-type">Commercial Airliner</p>
-                        <div class="aircraft-specs">
-                            <div class="spec">
-                                <span class="spec-value">189</span>
-                                <span class="spec-label">Seats</span>
-                            </div>
-                            <div class="spec">
-                                <span class="spec-value">5,765</span>
-                                <span class="spec-label">Range (km)</span>
-                            </div>
-                            <div class="spec">
-                                <span class="spec-value">2012</span>
-                                <span class="spec-label">Year</span>
-                            </div>
-                        </div>
-                        <button class="btn-outline">View Details</button>
-                    </div>
-                </div>
-                <div class="fleet-card" data-aircraft="airbus320">
-                    <div class="card-image">
-                        <div class="aircraft-visual"></div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Airbus A320neo</h3>
-                        <p class="aircraft-type">Commercial Airliner</p>
-                        <div class="aircraft-specs">
-                            <div class="spec">
-                                <span class="spec-value">180</span>
-                                <span class="spec-label">Seats</span>
-                            </div>
-                            <div class="spec">
-                                <span class="spec-value">6,500</span>
-                                <span class="spec-label">Range (km)</span>
-                            </div>
-                            <div class="spec">
-                                <span class="spec-value">2020</span>
-                                <span class="spec-label">Year</span>
-                            </div>
-                        </div>
-                        <button class="btn-outline">View Details</button>
-                    </div>
-                </div>
-                <div class="fleet-card" data-aircraft="gulfstream">
-                    <div class="card-image">
-                        <div class="aircraft-visual"></div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Gulfstream G650</h3>
-                        <p class="aircraft-type">Business Jet</p>
-                        <div class="aircraft-specs">
-                            <div class="spec">
-                                <span class="spec-value">19</span>
-                                <span class="spec-label">Seats</span>
-                            </div>
-                            <div class="spec">
-                                <span class="spec-value">13,890</span>
-                                <span class="spec-label">Range (km)</span>
-                            </div>
-                            <div class="spec">
-                                <span class="spec-value">2021</span>
-                                <span class="spec-label">Year</span>
-                            </div>
-                        </div>
-                        <button class="btn-outline">View Details</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class="section-container">
-            <div class="section-header">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">Comprehensive aviation solutions tailored to your needs</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🛒</div>
-                    <h3>Aircraft Acquisition</h3>
-                    <p>Expert guidance in purchasing new and pre-owned aircraft with comprehensive due diligence</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">💼</div>
-                    <h3>Aircraft Sales</h3>
-                    <p>Strategic marketing and sales services to maximize value for your aircraft assets</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📋</div>
-                    <h3>Leasing Solutions</h3>
-                    <p>Flexible leasing options including dry lease, wet lease, and sale-leaseback arrangements</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🔧</div>
-                    <h3>Maintenance Support</h3>
-                    <p>Technical consulting and maintenance program management for optimal aircraft performance</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📊</div>
-                    <h3>Valuation Services</h3>
-                    <p>Accurate market valuations and appraisals backed by industry expertise</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🌍</div>
-                    <h3>Import/Export</h3>
-                    <p>Complete regulatory compliance and logistics for international aircraft transactions</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
     <section id="about" class="about-section">
         <div class="section-container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <h2 class="section-title">About SkyTrade</h2>
-                    <p class="about-text">Founded in 1999, SkyTrade Aviation has established itself as a premier global aircraft trading company. We specialize in connecting buyers and sellers across commercial, business, and cargo aviation sectors.</p>
-                    <p class="about-text">Our team of experienced professionals brings decades of industry knowledge, ensuring every transaction is executed with precision, transparency, and integrity.</p>
-                    <div class="about-features">
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span>Global Network</span>
-                        </div>
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span>Certified Experts</span>
-                        </div>
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span>End-to-End Support</span>
-                        </div>
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span>Transparent Process</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <div class="globe-container">
-                        <div class="globe"></div>
-                    </div>
-                </div>
+            <h2 class="section-title">Welcome to Stratosphere Aeronautics</h2>
+            <p class="about-text">An ERNAM ICAO-recognized Regional Aviation Training Center.</p>
+        </div>
+    </section>
+    <section id="capabilities" class="services-section">
+        <div class="section-container">
+            <h2 class="section-title">Our Core Capabilities</h2>
+            <div class="services-grid">
+                <div class="service-card"><h3>Air Traffic Control & AIM</h3></div>
+                <div class="service-card"><h3>Safety Management Systems (SMS)</h3></div>
+                <div class="service-card"><h3>Language Proficiency Testing</h3></div>
+                <div class="service-card"><h3>Air Law: Rules of the Air</h3></div>
+                <div class="service-card"><h3>Principles of Flight</h3></div>
+                <div class="service-card"><h3>Meteorology</h3></div>
+                <div class="service-card"><h3>Navigation & Flight Planning</h3></div>
+                <div class="service-card"><h3>Aircraft General Knowledge</h3></div>
+                <div class="service-card"><h3>Human Performance & Limitations</h3></div>
+                <div class="service-card"><h3>Radio Communications</h3></div>
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
+    <section id="affiliations" class="fleet-section">
+        <div class="section-container">
+            <h2 class="section-title">Strategic Affiliations</h2>
+            <p>ICAO (WACAF Office), ASECNA, ERNAM</p>
+        </div>
+    </section>
     <section id="contact" class="contact-section">
         <div class="section-container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Ready to elevate your aviation portfolio? Contact us today</p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <h4>Headquarters</h4>
-                            <p>123 Aviation Boulevard, Dubai, UAE</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📞</div>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+971 4 123 4567</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">✉</div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@skytrade-aviation.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">🕐</div>
-                        <div>
-                            <h4>Business Hours</h4>
-                            <p>Mon-Fri: 9AM - 6PM GST</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Subject">
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary btn-full">Send Message</button>
-                </form>
+            <h2 class="section-title">Contact Us Today</h2>
+            <div class="contact-info">
+                <p>Headquarters: Hargiesa, Waqoyi Galbeed</p>
+                <p>Phone: +252 63 4048063</p>
+                <p>Website: https://stratosphereaeronautics.com</p>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="logo">
-                        <span class="logo-icon">✈</span>
-                        <span class="logo-text">SKYTRADE</span>
-                    </div>
-                    <p>Your trusted partner in global aircraft trading since 1999</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#fleet">Fleet</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#">Aircraft Sales</a></li>
-                        <li><a href="#">Acquisition</a></li>
-                        <li><a href="#">Leasing</a></li>
-                        <li><a href="#">Valuation</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h4>Connect With Us</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link">LinkedIn</a>
-                        <a href="#" class="social-link">Twitter</a>
-                        <a href="#" class="social-link">Facebook</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 SkyTrade Aviation. All rights reserved.</p>
-            </div>
-        </div>
+        <p>&copy; 2026 Stratosphere Aeronautics. All rights reserved.</p>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
